@@ -1,4 +1,4 @@
-# CssMT
+# CssMyTutorial
 Css My Tutorial  
 
 Css Flexbox ve Grid ile ilgili yazdığım notlarım ve örnekleri 
