@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flexbox Container</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+
+            /* display: flex;  ==> vermeden önce bütün elemanlar block özelliğindeydi flex verdikten sonra tüm elemanlar inline-block özelliğine geçtiler. yani içerikleri kadar yer kapladılar */
+            display: flex;
+
+            /* row ==> varsayılan özelliktir yan yana gelir */
+            /* flex-direction: row; */
+
+            /* row-reverse ==> row özelliğinin tam tersi yani sonraki elemanı başa alarak hizaladı */
+            /* flex-direction: row-reverse; */
+
+            /* column ==> Her bir eleman alt alta gelir satırı olduğu kaplar */
+            /* flex-direction: column; */
+
+            /* column-reverse ==> hizalamayı tersten yapar sondaki eleman baştan başlayarak hizalanır  */
+            /* flex-direction: column-reverse; */
+
+
+            /* nowrap ==> varsayılan değerdir */
+            /* flex-wrap: nowrap; */
+
+            /* wrap ==> ekrana sığmayan elemanları alt alta sıralar */
+            /* flex-wrap: wrap; */
+
+            /* wrap-reverse ==> ekrana sığmayan elemanları sondaki elemanı başa alarak hizalar yani tersten hizalar */
+            /* flex-wrap: wrap-reverse; */
+
+            background-color: #f2f2f2;
+            padding: 15px;
+        }
+
+        .item {
+            background-color: burlywood;
+            padding: 30px;
+            margin: 30px;
+            color: #fff;
+            font-size: 25px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item">İtem 1</div>
+        <div class="item">İtem 2</div>
+        <div class="item">İtem 3</div>
+        <div class="item">İtem 4</div>
+        <div class="item">İtem 5</div>
+        <div class="item">İtem 6</div>
+        <div class="item">İtem 7</div>
+        <div class="item">İtem 8</div>
+    </div>
+
+
+
+</body>
+
+</html>

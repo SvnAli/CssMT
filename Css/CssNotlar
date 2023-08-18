@@ -1,0 +1,419 @@
+
+
+- External Css  ==> Harici bir stil sayfasında kodlar yazılır ve html sayfasına eklenir.
+- İnternal Css  ==> Html sayfasında head tagları arasında style tagı açılarak kodlar yazılır.
+- İnline Css  ==> Tek bir öğeye stil vermek için kullanılır.
+
+
+- inherit  ==> bir özelliğin değerini üst öğesinden devralması gerektiğini belirtir.
+
+- z-index  ==> bir öğenin yığın sırasını belirtir (hangi öğe diğerlerinin önüne veya arkasına yerleştirilmelidir)
+
+- transparent  ==> bir rengi şeffaf yapmak için kullanılır. Bu genellikle bir öğe için saydam bir arka plan rengi oluşturmak için kullanılır.
+
+
+- :root  ==> değişkenler oluşturmak için kullanılır
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+CSS ÖNCELİKLERİ
+
+1.inline css
+2.id selector
+3.class selector
+4.tag selector
+5.browser defaults
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+CSS SEÇİCİLER
+
+-  id, class ve öğe adına göre seçiciler
+
+- (*) ==> evrensel seçici tüm kodlara etki eder.
+
+- Alt Seçici (boşluk) ==> belirtilen bir öğenin alt öğesi olan tüm öğelere etki eder
+
+- Çocuk Seçici (>)  ==> belirtilen bir öğenin çocukları olan tüm öğeleri yani div altındaki dive temas eden tüm p etiketleri gibi.
+
+- Bitişik Kardeş Seçici (+)  ==> Doğrudan başka bir belirli öğeden sonra olan bir öğeyi seçmek için kullanılır. yani div etiketi kapandıktan sonra altında seçilen öğeye etki eder.
+
+- Genel Kardeş Seçici (~)  ==> Belirtilen bir elemanın sonraki kardeşleri olan tüm elemanları seçer.
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+CSS NİTELİK SEÇİCİLERİ
+
+- a[target]  ==> Bir target parametresine sahip olan tüm a etiketlerini seçer.
+
+- a[target="_blank"]  ==> target="_blank" parametresine sahip tüm a etiketlerini seçer.
+
+- [attribute~="value"]  ==>  Belirtilen bir kelimeyi içeren öznitelik değerine sahip etiketleri seçmek için kullanılır. yani img etiketi içindeki alt öğesinin içinde value değeri yazarak onu seçer yazmazsak seçmez.
+
+- [attribute|="value"]  ==> Belirtilen değer ile başlayan öğeleri seçmek için kullanılır. verilen değerinin yanına (-) işareti ile ayrılmış şekilde tek bir kelime olmalıdır.
+
+- [attribute^="value"]  ==>  Öznitelik değeri belirli bir değerle başlayan etiketleri seçmek için kullanılır.
+
+- [attribute$="value"]  ==> Öznitelik değeri belirli bir değerle biten öğeleri seçmek için kullanılır.
+
+- [attribute*="value"]  ==> Öznitelik değeri belirli bir değer içeren öğeleri seçmek için kullanılır.
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+CSS PSEUDO CLASSES (SÖZDE SINIF SEÇİCİLERİ)
+
+- a:link  ==> ziyaret edilmemiş bağlantı
+- a:visited  ==> ziyaret edilmiş bağlantı 
+- a:hover  ==> fare üzerindeyken bağlantı
+- a:active  ==> seçili bağlantı
+
+- :first-child - :first-of-type  ==>  bir öğenin ilk çoçuğu (bölümü) belirtir
+- :last-child - :last-of-type  ==> Ebeveyninin son çocuğu olan her öğeyle eşleşir.
+
+- :nth-child(n) - :nth-of-type(n) ==> En baştan başlayarak verilen öğenin bulunduğu sıraya göre değer verir
+- :nth-last-child(n) - :nth-last-of-type(n)	 ==> Son alttan başlayarak verilen öğenin bulunduğu sıraya göre değer verir.
+
+- :checked  ==> Kontrol edilen her <input> öğesini seçer.
+- :disabled  ==> Devre dışı bırakılan her <input> öğesini seçer.
+- :enabled  ==> Etkinleştirilmiş her <input> öğesini seçer.
+- :empty  ==> Alt elemanı olmayan her <p> öğeyi seçer.
+- :focus  ==> Odaklanma
+- :invalid  ==> Öğenin ayarlarına göre doğrulanmayan bir değere sahip form öğelerini seçer.
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+CSS PSEUDO ELEMENTS (SÖZDE ÖĞELERİ)
+
+- ::after  ==> Seçilen her öğenin/öğelerin içeriğinden sonra bir şey ekler.
+- ::before  ==> Seçilen her öğenin/öğelerin içeriğinden önce bir şey ekler.
+- ::first-letter  ==>  Belirtilen seçicinin ilk harfine bir stil eklemek için kullanılır.
+- ::first-line  ==>  Belirtilen seçicinin ilk satırına bir stil eklemek için kullanılır.
+- ::marker  ==> Bir liste öğesinin işaretçisini seçer.
+- ::selection  ==> Bir öğenin kullanıcı tarafından seçilen kısmıyla eşleşir.
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+CSS BACKGROUNDS (ARKA PLAN)
+
+
+- background-color  ==> arkaplan rengi verir
+- opacity  ==> bir öğenin opaklığını/şeffaflığını ayarlar
+
+- background-image  ==> arka plan resmi ekler
+
+- background-repeat  ==> arka plan tekrarı
+
+- background-position  ==> arka plan konumu
+
+- background-attachment  ==> arka plan görüntüsünün kaydırılması veya sabitlenmesi gerektiğini belirtir
+
+- background  ==> color - image - repeat - position  kısayoldur
+
+- background-size  ==> arka plan resimlerinin boyutunu belirlemenizi sağlar.
+
+- background-clip  ==> arka planın boyama alanını belirtir.
+- border-box  =  (varsayılan) arka plan, sınırın dış kenarına boyanır
+- padding-box = arka plan, dolgunun dış kenarına boyanır
+- content-box = arka plan içerik kutusu içinde boyanır
+
+
+- background-image: linear-gradient(...)  ==> gradyantlar oluşturur
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+CSS BORDERS (KENARLIK)
+
+- border-style  ==> bir öğenin kenarlık stilini belirtir. 
+- border-width  ==> bir öğenin kenarlık genişliğini belirtir
+- border-color  ==> bir öğenin kenarlık rengini belirtir
+- border  ==> width - style - color  kısayoldur
+
+border-image  ==> bir öğenin etrafındaki normal kenarlık yerine kullanılacak bir görüntü belirlemenizi sağlar.
+
+- border-radius  ==> bir öğeye yuvarlatılmış kenarlıklar eklemek için kullanılır.
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+CSS OUTLİNE (ANAHAT)
+
+- outline-style  ==> öğenin stilini belirtir
+- outline-width  ==> bir öğenin genişliğini belirtir
+- outline-color  ==> bir öğenin rengini belirtir
+- outline  ==> width - style - color  kısayoldur
+
+- outline  ==>  öğeyi öne çıkarmak için, sınırların dışında, öğelerin etrafına verilen stildir
+
+- outline-offset  ==>  bir öğenin anahattı ile kenarı/kenarlığı arasına boşluk ekler.
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+CSS MARGİN 
+
+- Tanımlanmış herhangi bir sınırın dışında, öğelerin etrafında boşluk oluşturmak için kullanılır.
+
+- margin-top  ==> üstten
+- margin-right  ==> sağdan
+- margin-bottom  ==> alttan
+- margin-left  ==> soldan
+
+- margin: ..px ..px ..px ..px  ==> üstten - sağdan - alttan - soldan
+
+- margin: ..px ..px ..px  ==> üstten - sağdan/soldan - alttan
+
+- margin: ..px ..px  ==> üst/alt - sağ/sol
+
+- margin: ..px  ==> tüm kenarlardan değer verir
+
+- margin:auto  ==> Öğeyi kapsayıcısında yatay olarak ortalamak için kenar boşluğu özelliği olarak ayarlanır. Öğe daha sonra belirtilen genişliği alacak ve kalan boşluk sol ve sağ kenar boşlukları arasında eşit olarak bölünecektir.
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+CSS PADDİNG 
+
+- Dolgu, bir öğenin içeriğinin çevresinde, tanımlanmış herhangi bir sınırın içinde boşluk oluşturmak için kullanılır.
+
+- padding-top  ==> üstten
+- padding-right  ==> sağdan
+- padding-bottom  ==> alttan
+- padding-left  ==> soldan
+
+- padding: ..px ..px ..px ..px  ==> üstten - sağdan - alttan - soldan
+
+- padding: ..px ..px ..px  ==> üstten - sağdan/soldan - alttan
+
+- padding: ..px ..px  ==> üst/alt - sağ/sol
+
+- padding: ..px  ==> tüm kenarlardan değer verir
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+CSS TEXT (METİN)
+
+
+- color  ==> yazı metnine renk verir
+
+- text-align  ==> bir metnin yatay hizalamasını ayarlamak için kullanılır.  (center, left, right)
+- text-align:justify  ==>  her satır eşit genişliğe sahip olacak ve sol ve sağ kenar boşlukları düz olacak şekilde uzatılır 
+
+- text-align-last  ==> bir metnin son satırının nasıl hizalanacağını belirtir. (center, right, justify)
+
+- vertical-align  ==> bir öğenin dikey hizalamasını ayarlar. (baseline, text-top, text-bottom, sub, super, middle, top)
+
+
+
+- text-decoration  ==> line - color - style - thickness  kısayoldur
+
+- text-decoration-line  ==> metne bir dekorasyon çizgisi eklemek için kullanılır
+
+- text-decoration-color  ==> dekorasyon çizgisinin rengini ayarlamak için kullanılır.
+
+- text-decoration-style  ==> dekorasyon çizgisinin stilini ayarlamak için kullanılır.
+
+- text-decoration-thickness  ==> dekorasyon çizgisinin kalınlığını ayarlamak için kullanılır.
+
+
+
+- text-transform  ==>  bir metindeki büyük ve küçük harfleri belirtmek için kullanılır.
+- uppercase  ==> metni büyük harflere dönüştürür
+- lowercase  ==> metni küçük harflere dönüştürür
+- capitalize  ==> metnin her kelimesi büyük harfle yazılır
+
+
+
+- text-indent  ==> bir metnin ilk satırının girintisini belirtmek için kullanılır.
+
+- letter-spacing  ==> bir metindeki karakterler arasındaki boşluğu belirtmek için kullanılır.
+
+- line-height  ==> satırlar arasındaki boşluğu belirtmek için kullanılır. satır yüksekliği
+
+- word-spacing  ==> bir metindeki sözcükler arasındaki boşluğu belirtmek için kullanılır.
+
+- white-space  ==> bir öğe içindeki boşlukların nasıl ele alınacağını belirtir.
+
+
+- text-shadow  ==> metne gölge ekler.
+- text-shadow: ..px (yatayda) - ..px (dikeyde) - ..px (bulanıklık) - renk
+
+
+- box-shadow  ==> kutu etrafına gölge ekler.
+- box-shadow: ..px (yatayda) - ..px (dikeyde) - ..px (bulanıklık) - renk
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+CSS FONT (YAZI TİPİ)
+
+- font-family  ==> bir metnin yazı tipini belirtmek için kullanılır
+
+- font-style  ==> bir metnin yazı stilini belirtmek için kullanılır
+
+- font-weight  ==> bir yazı tipinin ağırlığını belirtir.
+
+- font-variant  ==> bir metnin küçük büyük yazı tipinde görüntülenip görüntülenmeyeceğini belirtir.
+
+- font-size  ==> metnin boyutunu ayarlar.
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+CSS LİSTELER
+
+- list-style-type  ==> liste öğesi işaretçisinin türünü belirtir.
+
+- list-style-image  ==> liste öğesi işaretçisi olarak bir görüntüyü belirtir.
+
+- list-style-position  ==> liste öğesi işaretçilerinin (madde işaretleri) konumunu belirtir.
+
+- list-style: type - position - image kısayoldur
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+CSS OVERFLOW (TAŞMA)
+
+- overflow  ==> bir öğenin içeriği belirtilen alana sığmayacak kadar büyük olduğunda içeriğin kırpılacağını veya kaydırma çubukları eklenip eklenmeyeceğini belirtir.
+
+- visible  ==> Varsayılan. Taşma kırpılmamış. İçerik, öğe kutusunun dışında işleniyor
+- hidden  ==> Taşma kırpılır ve içeriğin geri kalanı görünmez olur
+- scroll  ==> Taşma kırpıldı ve içeriğin geri kalanını görmek için bir kaydırma çubuğu eklendi
+- auto - scroll  ==> ancak yalnızca gerektiğinde kaydırma çubukları ekler
+
+overflow-x ve overflow-y  ==>  içeriğin taşmasını yalnızca yatay olarak mı yoksa dikey olarak mı (veya her ikisini birden) değiştireceğinizi belirtir:
+
+* overflow yalnızca belirli bir yüksekliğe sahip blok elemanları için çalışır.
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+CSS TRANSİTİON
+
+- özellik değerlerini belirli bir süre boyunca sorunsuz bir şekilde değiştirmemize olanak tanır
+
+- transition-timing-function  ==> geçiş efektinin hız eğrisini belirtir.
+
+- ease  ==> yavaş başlayan, sonra hızlı, sonra yavaş biten bir geçiş efekti belirtir (bu varsayılandır)
+- linear  ==> baştan sona aynı hızda bir geçiş efekti belirtir
+- ease-in  ==> yavaş başlangıçlı bir geçiş efekti belirtir
+- ease-out  ==> yavaş uçlu bir geçiş efekti belirtir
+- ease-in-out  ==> yavaş başlangıçlı ve bitişli bir geçiş efekti belirtir
+
+
+- transition-delay  ==> geçiş efekti için bir gecikme (saniye cinsinden) belirtir.
+
+- transition-duration  ==> bir geçiş efektinin tamamlanmasının kaç saniye (s) veya milisaniye (ms) süreceğini belirtir.
+
+- transition-property  ==> geçiş efektinin kullanılacağı CSS özelliğinin adını belirtir
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+CSS TRANSFORM
+
+- translate  ==> bir öğeyi mevcut konumundan hareket ettirir (X ekseni ve Y ekseni için verilen parametrelere göre)
+- translateX == X eksenindeki konumunu değiştirmek için
+- translateY == Y eksenindeki konumunu değiştirmek için
+- translateZ == Z eksenindeki konumunu değiştirmek için
+
+- rotate  ==> bir öğeyi belirli bir dereceye göre saat yönünde veya saat yönünün tersine döndürür.
+- rotateX == Html etiketini, 3 boyutlu olarak X ekseninde döndürür.
+- rotateY == Html etiketini, 3 boyutlu olarak Y ekseninde döndürür.
+- rotateZ == Html etiketini, 3 boyutlu olarak Z ekseninde döndürür
+
+- scale  ==> bir elemanın boyutunu artırır veya azaltır (genişlik ve yükseklik için verilen parametrelere göre)
+- scaleX == bir öğenin genişliğini artırır veya azaltır.
+- scaleY == bir elemanın yüksekliğini artırır veya azaltır.
+
+- skew  ==> bir öğeyi X ve Y ekseni boyunca verilen açılarla eğirir.
+- skewX  == bir elemanı X ekseni boyunca verilen açı kadar eğirir.
+- skewY  == bir elemanı Y ekseni boyunca verilen açı kadar eğirir.
+
+- matrix  ==> tüm 2B (transform) dönüştürme yöntemlerini bir araya getirir.
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+CSS ANİMATİONS
+
+- @keyframes  == animasyon belirli zamanlarda mevcut stilden yeni stile kademeli olarak geçmesini sağlar
+- animation-name  == animasyonun çalışması için animasyonu bir öğeye bağlamamız lazım.
+
+- animation-duration  ==> bir animasyonun tamamlanmasının ne kadar süreceğini tanımlar. 
+
+- animation-delay  ==> bir animasyonun başlaması için bir gecikme belirtir.
+
+- animation-iteration-count  ==> bir animasyonun kaç kez tekrarlnaması gerektiğini belirtir.
+
+- animation-direction  ==> bir animasyonun ileri, geri veya alternatif döngülerde oynatılıp oynatılmayacağını belirtir.
+- normal  == Animasyon normal şekilde oynatılır (ileriye doğru). Bu varsayılan
+- reverse  == Animasyon ters yönde oynatılır (geriye doğru)
+- alternate  == Animasyon önce ileri, sonra geri oynatılır
+- alternate-reverse  == Animasyon önce geriye sonra ileriye doğru oynatılır
+
+- animation-timing-function  ==> animasyonun hız eğrisini belirtir.
+- ease  == Yavaş başlayan, sonra hızlı, sonra yavaş biten bir animasyon belirtir (bu varsayılandır)
+- linear  == Baştan sona aynı hızda bir animasyon belirtir
+- ease-in  == Yavaş başlayan bir animasyon belirtir
+- ease-out  == Yavaş uçlu bir animasyon belirtir
+- ease-in-out  == Yavaş başlangıçlı ve bitişli bir animasyon belirtir
+
+- animation-fill-mode  ==> Animasyon bittikten sonraki süreç.
+- none  ==	Varsayılan değerdir. Animasyon işlemi bittikten sonra animasyon uygulanan elemanın değerleri ilk haline döner
+
+- forwards  == Animasyon işlemi bittikten sonra uygulanan değerler kalır. Örneğin rengi maviyse ve animasyon ile rengi kırmızıya dönmüşse, animasyon bittiğinde rengi kırmızı olarak kalır.	
+
+- backwards  ==	Animasyon başlamadan önce ilk karedeki değerler uygulanır ve bittiğinde animasyon uygulanan eleman varsayılan değerlerine geri döner. Örneğin animasyon uygulanan elemanın rengi maviyse ve animasyonun ilk karesinde rengini kırmızıya döndürüyorsak, animasyon başlamamış bile olsa ilk karedeki değerler uygulanır. Animasyona başlangıç süresi verdiğimizde, bunu daha net görebiliriz.	
+
+- both  == Animasyon başlamadan önce ilk karedeki değerler uygulanır, bittiğinde ise son karedeki uygulanan değerlerle birlikte kalır. Kısaca forwards ve backwards değerlerinin ikisini de kullanmak için kullanılır.
+
+
+animation: name - duration - timing-function - delay - iteration-count - direction   kısayoldur
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+CSS POSİTİON
+
+- bir öğe için kullanılan konumlandırma yönteminin türünü belirtir 
+
+- static  ==> HTML öğeleri varsayılan olarak statik konumlandırılmıştır.Statik konumlandırılmış etiketler, top, bottom, left ve right özelliklerden etkilenmez.Statik etiketler herhangi bir özel şekilde konumlandırılmamıştır ve her zaman sayfanın normal akışına göre konumlandırılırlar
+
+- relative  ==> normal konumuna göre konumlandırılmıştır.Relative olarak konumlandırılmış bir etiketin top, bottom, left ve right özelliklerinin ayarlanması, normal konumundan uzağa ayarlanmasına neden olacaktır. Diğer blok etiketleri, etiketin bıraktığı herhangi bir boşluğa sığacak şekilde ayarlanmayacaktır.
+
+- fixed  ==> özelliğine sahip etiket, görüntü alanına göre konumlandırılmıştır, yani sayfa kaydırılmış olsa bile her zaman aynı yerde kalır. top, bottom, left ve right gibi özellikler, öğeyi konumlandırmak için kullanılır.
+
+- absolute  ==> özelliğine sahip bir etiket, en yakın konumlandırılmış ata etikete göre konumlandırılır (fixed gibi, görüntü alanına göre konumlandırılmaz).
+- Ancak absolute konumlandırılmış bir öğenin konumlandırılmış üst etiketi yoksa, body etiketine göre kullanılır ve sayfa kaydırmayla birlikte hareket eder.
+
+- sticky  ==> kullanıcının kaydırma konumuna göre konumlandırılır. yapışkan konum

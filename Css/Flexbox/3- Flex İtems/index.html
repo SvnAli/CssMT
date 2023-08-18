@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flex İtems</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            background-color: #b3b3b3;
+            padding: 20px;
+        }
+
+        .item {
+            background-color: cadetblue;
+            padding: 25px;
+            margin: 25px;
+            color: #fff;
+            font-size: 25px;
+
+            /* flex-grow ==> elemanlar kutu içini eşit oranda kaplar */
+            /* flex-grow: 1; */
+
+            /* 
+            flex: 1; ==> flex-grow'un aynısı elemanlara aynı değeri verir.
+            */
+        }
+
+        /*
+        align-self ==> elemanlara tek tek değer vermek için kullanılır.
+        */
+        /* eleman için alabileceği tam yüksekliğe göre hizalanır */
+        .i1 {
+            align-self: stretch;
+            order: 6;
+
+            flex: 1;
+
+            /* flex-grow : elemanlara tek tek değer de verilebilir. */
+            /* flex-grow: 2; */
+        }
+
+        .i2 {
+            height: 200px;
+            order: 5;
+            /* flex-grow: 4; */
+
+
+            /* flex-basis ==>  esnek bir kutu içerisindeki öğelerin ilk boyutunu belirler. */
+            /* flex-basis: 15%; */
+            /* flex-basis: 200px; */
+
+            /* flex-shrink ==> Konteyner daraldığı zaman içindeki elemanların hangi oranda daralacağını belirtir */
+            /* flex-shrink: 0; */
+
+
+            /* KISAYOL : flex-grow / flex-shrink / flex-basis*/
+            flex: 0 1 200px;;
+        }
+
+        /* kutu içinde en başta hizalanır */
+        .i3 {
+            align-self: flex-start;
+            order: -5;
+        }
+
+        /* kutu içinde en sonda hizalanır */
+        .i4 {
+            align-self: flex-end;
+            order: -6;
+        }
+
+        /*
+        order ile elemanları tek tek sıralayabiliriz        
+        */
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item i1">İtem 1</div>
+        <div class="item i2">İtem 2</div>
+        <div class="item i3">İtem 3</div>
+        <div class="item i4">İtem 4</div>
+    </div>
+
+
+</body>
+
+</html>

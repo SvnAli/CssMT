@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Grid Rows and Columns</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+
+
+            /* GRİD TEMPLATE COLUMNS */
+
+            /* elemanlara  sabit bir genişlik verir 
+            grid-template-columns: 150px 250px 400px 150px;
+            */
+
+            /*
+            1. ve 3. elamana sabit bir genişlik 2. ve 4. elemanlara auto değeri verildi yani ekran büyüdükçe 2. ve 4. elemanlar otomatik genişlik kaplar
+            grid-template-columns: 150px auto 200px auto;
+            */
+
+            /* 
+            repeat kısayoldur belirtilen eleman kadar değer verir
+            grid-template-columns: repeat(4, auto);
+            grid-template-columns: repeat(4, 200px);
+            */
+
+            /*
+            1fr 1fr demek auto özelliği demektir. yani 2fr 1frın 2 katı demektir.
+            grid-template-columns: 150px 200px 1fr 2fr;
+            */
+
+
+            /* GRİD TEMPLATE ROWS */
+
+            /* grid-template-columns: 150px 200px 1fr; */
+            /* elemanlara satırda belirlenen yükseklik verir */
+            /* grid-template-rows: 200px 350px; */
+
+
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 1fr 1fr;
+
+            /* auto-rows ==> kalan diğer elemanlara değer verir */
+            grid-auto-rows: 3fr;
+
+            background-color: #034f84;
+            padding: 20px;
+        }
+
+        .item {
+            background-color: #f7786b;
+            padding: 20px;
+            margin: 20px;
+            color: #fff;
+            font-size: 25px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 7</div>
+        <div class="item">item 8</div>
+        <div class="item">item 9</div>
+        <div class="item">item 10</div>
+        <div class="item">item 11</div>
+        <div class="item">item 12</div>
+    </div>
+
+
+</body>
+
+</html>

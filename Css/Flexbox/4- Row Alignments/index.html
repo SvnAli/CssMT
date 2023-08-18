@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flex Row Alignments</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+
+            /* align-content ==> konteyner içerisindeki bütün elemanların birden fazla satırı varsa hizalama için kullanılır */
+
+            /* elemanları satırda en başa hizalar */
+            /* align-content: flex-start; */
+
+            /* elemanları satırda en sona hizalar */
+            /* align-content: flex-end; */
+
+            /* varsayılan özellik */
+            /* align-content: strech; */
+
+            /* elemanları satırda ortada hizalar */
+            /* align-content: center; */
+
+            /* elemanları satırda eşit bir şekilde boşluk bırakarak hizalar */
+            /* align-content: space-between; */
+
+            /* elemanları satırda üstten ve alttan bir birim boşluk ortalardaysa 2 birim boşluk bırakarak hizalar */
+            /* align-content: space-around; */
+
+            /* elemanları satırda üstten ve alttan ve ortalarda eşit bir şekilde hizalar */
+            /* align-content: space-evenly; */
+
+            height: 1000px;
+            background-color: #b3b3b3;
+            padding: 20px;
+        }
+
+        .item {
+            background-color: cadetblue;
+            padding: 25px;
+            margin: 25px;
+            color: #fff;
+            font-size: 25px;
+        }
+
+        .i7 {
+            flex: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item i7">item 7</div>
+    </div>
+
+
+</body>
+
+</html>

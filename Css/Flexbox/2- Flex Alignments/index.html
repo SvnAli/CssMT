@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flexbox Alignments</title>
+
+    <style>
+        .container {
+            display: flex;
+
+
+            /* 
+
+            hizalamaları genelde yatayda justify-content dikeyde align-items olarak kullanıyoruz. ama hizalamalar tarayıcıdaki varsayılan özelliği flex-direction: row; özelliğini varsayarak hizalanır.
+
+            eğer ki flex-direction özelliğini row'dan column'a çevirdiğimizde bu sefer tam tersi olur.
+            dikeyde justify-content yatayda align-items olarak hizalanır.
+
+
+            justify-content: space-between;
+            align-items: center; 
+
+            yani row özelliğinde yatayda elemanlar ortalanıp eşit boşluklarla hizalanırken
+            column özelliğinde kutunun ortasında hizalanıp dikeyde eşit boşluk bırakarak hizalanır
+
+            */
+
+
+
+            /* justify-content ==> elemanları yatayda hizalar */
+
+
+            /* center ==> elemanları kutu içinde ortalar */
+            /* justify-content: center; */
+
+            /* flex-start ==> elemanları kutu içinde sola hizalar */
+            /* justify-content: flex-start; */
+
+            /* flex-end ==> elemanları kutu içinde sağa hizalar */
+            /* justify-content: flex-end; */
+
+            /* space-between ==> kutu içinde her bir eleman arasında eşit boşluk bırakarak hizalar. tarayıcı büyütüp küçültürkende eşit bir şekilde boşluk bırakarak hizalanır */
+            /* justify-content: space-between; */
+
+            /* space-around ==> kutu içinde her bir eleman arasında eşit boşluk bırakırken sağdan ve soldan elemanlara verilen boşluğun yarısı kadar boşluk verir */
+            /* justify-content: space-around; */
+
+            /* space-evenly ==> kutu içinde her bir eleman arasında ve sağdan ve soldan eşit boşluk bırakarak hizalanır */
+            /* justify-content: space-evenly; */
+
+
+
+            /* align-items ==> elemanları dikeyde hizalar. mesela bir elemana 200px yükseklik verip diğer elemanlara ecnter özelliği verirsek diğer elemanlar ortalanıp yükseklik verdiğimiz eleman sabit kalır */
+
+            /* elemanlar verilen yüksekliklere göre kendini kutu içinde hizalar. yüksekliğe uyar. */
+            /* align-items: stretch; */
+
+            /* elemanlar kutu içinde dikeyde ortada hizalanır */
+            /* align-items: center; */
+
+            /* elemanlar kutu içinde dikeyde en başta hizalanır */
+            /* align-items: flex-start; */
+
+            /* elemanlar kutu içinde dikeyde en sonda hizalanır */
+            /* align-items: flex-end; */
+
+            /* elemanlar kutu içinde dikeyde içeriklerin yani yazıların tam alt sınırına göre konum alarak hizalanır */
+            /* align-items: baseline; */
+            
+
+
+
+
+            background-color: #b3b3b3;
+            padding: 20px;
+        }
+
+        .item {
+            background-color: cadetblue;
+            padding: 25px;
+            margin: 25px;
+            color: #fff;
+            font-size: 25px;
+        }
+
+        .i2 {
+            height: 200px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item">İtem 1</div>
+        <div class="item i2">İtem 2</div>
+        <div class="item">İtem 3</div>
+        <div class="item">İtem 4</div>
+    </div>
+
+
+
+</body>
+
+</html>

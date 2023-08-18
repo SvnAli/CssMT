@@ -1,0 +1,285 @@
+
+HTML META TAGLARI
+
+- <meta charset="UTF-8"> ==> Türkçe karakterleri belirtir
+
+- <meta name="viewport" content="width=device-width, initial-scale=1.0"> ==> Tarayıcıya bir sayfanın mobil cihazda nasıl oluşturulacağını bildirir.
+
+- <meta name="keywords" content="HTML, CSS, JS">  ==> Arama motorları için anahtar kelimelerin tanımlar
+
+- <meta name="description" content="Web Geliştirme Eğitimi">  ==> Sayfa açıklaması
+
+- <meta name="author" content="swn.com"> ==> Sayfanın yazarını belirtir
+
+- <meta http-equiv="refresh" content="20"> ==> Sayfanın 20 saniye aralıklarla yenilenmesi
+
+- <meta name="abstract" content="Site özeti"> ==> Tüm site hakkında bilgi veren cümledir.
+
+- <meta name="Copyright" content="telif hakkı cümlesi"> ==> Sitenin telif hakları konusunda bilgi verir.
+
+- <meta http-equiv="content-language" content="tr"> ==> Sitenizin varsayılan dilini belirtir
+
+- <meta name="revisit-after" content="7 days"> ==> Arama motorlarına, sitenin içeriğinin kaç günde bir güncellendiğini iletir.
+
+- <meta name="robots" content="none">
+<meta name="robots" content="index,follow">
+<meta name="robots" content="noindex,follow">
+<meta name="robots" content="index,nofollow">
+<meta name="robots" content="noindex,nofollow">  ==> Arama motoru robotlarının,  site içerisindeki linkleri takip edip etmeyeceklerini gösteren etikettir.
+
+
+- <link rel="icon" type="..." href="...">  ==> Sekme başlığı ikonu
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+HTML BAŞLIK ETİKETLERİ 
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+6 tür başlık etiketi vardır en büyüğü h1 en küçüğü h6 etiketidir.
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+HTML TEMEL - BİÇİMLENDİRME ETİKETLERİ
+
+<p></p>  ==> paragraf etiketidir
+
+<hr>  ==> iki satır arasında yatay bir çizgi oluşturur
+
+<br> ==> satır sonu demektir yani bir satır atlatır
+
+<b></b> - <strong></strong>  ==> Kalın yazı
+
+<i></i> - <em></em>  ==> italik yazı
+
+<del></del> - <s></s>  ==> Silinmiş yazı yani üstünü çizer
+
+<ins></ins> - <u></u>  ==> eklenmiş yazı yani altını çizer
+
+<sub></sub>  ==> Alt simge yazı
+
+<sup></sup>  ==> Üst simge yazı
+
+<mark></mark>  ==> İşaretli yazı
+
+<small></small>  ==> Küçük yazı
+
+<pre></pre>  ==> şiirsel metin
+
+<samp></samp>  ==> bilgisayar çıktı fontu
+
+<blockquote></blockquote>  ==>  Başka bir kaynaktan alıntılanan bir bölümü tanımlar. cite="" etiketi içine alıntının adresi yazılır
+
+<q></q>  ==>  Kısa bir alıntıyı tanımlar.
+
+<abbr></abbr>  ==> Kısaltma tanımlar. title="" etiketi içine kısaltmanın tanımı yazılır
+
+<address></address>  ==> Bir belgenin veya makalenin yazarının/sahibinin iletişim bilgilerini tanımlar.
+
+<cite></cite>  ==> Yaratıcı bir çalışmanın başlığını tanımlar.
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+HTML DİĞER ETİKETLER
+
+
+<span></span>  ==> Bir metnin veya bir belgenin bir bölümünü işaretlemek için kullanılan satır içi bir kapsayıcıdır.
+
+<img src="resimlinki" alt="resimaçıklaması">  ==> resim ekler
+
+<iframe src="youtube.com" height="200" width="300" title="Iframe Example"></iframe>  ==>Bir web sayfasını bir web sayfası içinde görüntülemek için kullanılır.
+
+<details></details>  ==> Kullanıcının istek üzerine açıp kapatabileceği ek ayrıntıları belirtir. 
+İçine <summary></summary> etiketleriyle başlık tanımlanabilir
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+HTML LİNK ETİKETLERİ
+
+<a href="https://www.link.com/">link</a>  ==> adres belirtir
+
+_self  ==>  Varsayılan. Belgeyi tıklandığı pencerede/sekmede açar
+_blank  ==> Belgeyi yeni bir pencerede veya sekmede açar
+_parent ==> Belgeyi üst çerçevede açar
+_top ==> Belgeyi pencerenin tam gövdesinde açar
+target="" ==> etiketi içinde kullanılır
+
+<a href="mailto:someone@example.com">Email adresi</a>  ==> Belirtilen adrese mail göndermek için kullanılır
+
+<a href="#bağlantıadresi"></a>
+<h2 id="bağlantıadresi"></h2>   ==>  Yer işaretlerini bağlar.
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+HTML TABLO ETİKETLERİ
+
+<table></table>  ==> Tablo açılım etiketidir
+
+<caption></caption> ==> tablo başlığını tanımlar.
+
+<thead></thead>  ==> Başlık içeriğini gruplandırmak için kullanılır.
+
+<tbody></tbody>  ==> Gövde içeriğini gruplandırmak için kullanılır.
+
+<tfoot></tfoot>  ==> Alt bilgi içeriğini gruplandırmak için kullanılır.
+
+<tr></tr>  ==> Tablo satırı anlamına gelir
+
+<th></th>  ==> Tablo başlığını belirtir
+
+<td></td>  ==> Tablo hücresinin içeriğidir.
+
+colspan=".."  ==> Bir hücreyi birden çok sütuna yaymak için kullanılır
+
+rowspan=".."  ==> Bir hücreyi birden çok satıra yaymak için kullanılır
+
+
+------------------------------------------------------------------------------------------------------------------
+
+
+HTML LİSTE ETİKETLERİ
+
+<ul></ul>  ==> Sırasız bir liste etiketidir
+
+<ol></ol>  ==> Sıralı bir liste etiketidir
+
+<li></li>  ==> Liste öğelerini belirtir
+
+<dl></dl>  ==> Açıklama listesi tanımlar
+
+<dt></dt>  ==> Açıklama listesi adını tanımlar
+
+<dd></dd>  ==> Açıklama listesi açıklamasını tanımlar
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+HTML FORM ETİKETLERİ
+
+<form></form>  ==>  Kullanıcı girişi için bir HTML formu oluşturmak için kullanılır.
+
+<input type="text">  ==> Tek satırlık bir metin giriş alanı görüntüler
+
+<input type="radio">  ==> Bir radyo düğmesi görüntüler (birçok seçenekten birini seçmek için)
+
+<input type="checkbox">  ==> Bir onay kutusu görüntüler (birçok seçenekten sıfır veya daha fazlasını seçmek için)
+
+<input type="submit">  ==> 	Bir gönder düğmesi görüntüler (formu göndermek için)
+
+<input type="button">  ==> 	Tıklanabilir bir düğme görüntüler
+
+<input type="color">  ==> Giriş alanında bir renk seçici görüntülenebilir.
+
+<input type="password">  ==> Bir şifre alanı tanımlar.
+
+<input type="reset">  ==> Tüm form değerlerini varsayılan değerlerine sıfırlayacak bir sıfırlama düğmesi tanımlar.
+
+<input type="date">  ==> Tarih içermesi gereken giriş alanları için kullanılır.
+
+<input type="datetime-local">  ==> Saat dilimi olmayan bir tarih ve saat giriş alanı belirtir.
+
+<input type="time">  ==> Kullanıcının bir saat seçmesine izin verir.
+
+<input type="week">  ==> Kullanıcının bir hafta ve yıl seçmesine izin verir.
+
+<input type="email">  ==> Bir e-posta adresi içermesi gereken giriş alanları için kullanılır.
+
+<input type="image">  ==> Bir görüntüyü gönder düğmesi olarak tanımlar .
+
+<input type="file">  ==> Dosya yüklemeleri için bir dosya seçme tanımlar.
+
+<input type="hidden">  ==> Gizli bir giriş alanı tanımlar.
+
+<input type="month">  ==> Kullanıcının bir ay ve yıl seçmesine izin verir.
+
+<input type="number">  ==> Sayısal bir giriş alanı tanımlar.
+
+<input type="search">  ==> Arama alanları için kullanılır
+
+<input type="tel">  ==> Telefon numarası içermesi gereken giriş alanları için kullanılır.
+
+<input type="url">  ==> Bir URL adresi içermesi gereken giriş alanları için kullanılır.
+
+
+<select></select>  ==> Bir açılır liste tanımlar.
+
+<option></option>  ==> Seçilebilecek bir seçeneği tanımlar.
+
+Önceden seçilmiş bir seçeneği tanımlamak için selected özelliği kullanılır.
+
+<textarea></textarea>  ==> Çok satırlı bir giriş alanı (bir metin alanı) tanımlar.
+row = görünür satır sayısını
+cols = görünür genişliğini belirtir
+
+<fieldset></fieldset>  ==> İlgili verileri bir formda gruplandırmak için kullanılır.
+<legend></legend>  ==> fieldset için bir başlık tanımlar 
+
+<datalist></datalist>  ==> Bir öğe için önceden tanımlanmış seçeneklerin bir listesini belirtir.
+
+
+
+
+
+
+value  ==> Bir giriş alanı için bir başlangıç değeri belirtir.
+
+readonly  ==> Bir giriş alanının salt okunur olduğunu belirtir.
+
+disabled  ==> Bir giriş alanının devre dışı bırakılması gerektiğini belirtir.
+
+size  ==> Bir giriş alanının görünür genişliğini karakter cinsinden belirtir.
+
+maxlength  ==> Bir giriş alanında izin verilen maksimum karakter sayısını belirtir.
+
+min ve max  ==> Bir giriş alanı için minimum ve maksimum değerleri belirtir.
+
+multiple  ==> Kullanıcının bir giriş alanına birden fazla değer girmesine izin verildiğini belirtir.
+
+pattern  ==> Form gönderildiğinde giriş alanının değerinin kontrol edildiği bir normal ifadeyi belirtir.
+
+placeholder ==> Bir giriş alanının beklenen değerini açıklayan kısa bir ipucu belirtir.
+
+required  ==> Formu göndermeden önce bir giriş alanının doldurulması gerektiğini belirtir.
+
+step  ==> Bir giriş alanı için yasal sayı aralıklarını belirtir.
+
+autofocus  ==> Sayfa yüklendiğinde bir giriş alanına otomatik olarak odaklanılması gerektiğini belirtir.
+
+autocomplete  ==> Bir form veya giriş alanında otomatik tamamlamanın açık mı yoksa kapalı mı olacağını belirtir.
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+HTML AUDIO VE VIDEO ETİKETLERİ
+
+<audio></audio>  ==> müzik eklemek için kullanılır
+
+<video></video>  ==> video eklemek için kullanılır
+
+<source src="müzik adresi" type="audio/mp3">  ==> müzik adresi ve tipini belirtir
+
+autoplay  ==> Ses hazır olur olmaz çalmaya başlayacağını belirtir
+
+controls  ==> Ses kontrollerinin görüntülenmesini belirtir
+
+loop  ==> Tekrarlama
+
+muted  ==> Sessiz
+
+preload  ==> Ön yükleme

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flex & Margin</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            
+            /* justify-content: center; */
+            /* align-items: center; */
+
+            height: 500px;
+            background-color: #c5c4c4;
+        }
+
+        .item {
+            /* margin ile justify-content/align-items ile yaptıklarımızı yapabiliriz  */
+
+            /* margin: auto; */
+            /* margin-right: auto; */
+            /* margin-left: auto; */
+            /* margin-top: auto; */
+            /* margin-bottom: auto; */
+
+            background-color: cadetblue;
+            padding: 30px;
+            color: #fff;
+            font-size: 25px;
+        }
+
+        .i1 {
+            margin: auto;
+        }
+
+        .i2 {
+            margin: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item i1">İtem 1</div>
+        <div class="item i2">İtem 2</div>
+    </div>
+
+
+</body>
+
+</html>
